@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+	head
+		title= title
+		link(rel='stylesheet', href='/assets/stylesheets/bootstrap.css')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+		link(rel='stylesheet', href='/assets/stylesheets/style.css')
+	body
+		div.navbar.navbar-inverse
+			div.container-fluid
+				div.navbar-header
+					a.navbar-brand Admin
+				ul.nav.navbar-nav.navbar-right
+					li.active 
+						a(href='/admin/dashboard') Dashboard
+					li 
+						a(href='/admin/logout') logout
+		block content
+		script(type='text/javascript', src='/assets/javascripts/jquery.min.js')

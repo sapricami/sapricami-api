@@ -1,0 +1,23 @@
+extends admin_layout
+
+block content
+	div.container-fluid
+		div.well
+			div.row
+				div.col-md-12.text-center
+					h4 Welcome #{pagedata.adminemail} 
+					br
+					br
+				div.col-md-4.text-center
+					a(href='/admin/pages')
+						i.fa.fa-file.fa-3x
+						h3 Pages
+				div.col-md-4.text-center
+					a(href='/admin/adminusers')
+						i.fa.fa-user-secret.fa-3x
+						h3 Admin Users
+				div.col-md-4.text-center
+					a(href='/admin/users')
+						i.fa.fa-users.fa-3x
+						h3 Users
+				div.clearfix
